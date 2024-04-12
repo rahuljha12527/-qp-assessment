@@ -1,4 +1,4 @@
-Sure! Let's complete the API endpoints and the user endpoints in the README file.
+
 
 ---
 
@@ -33,15 +33,15 @@ To run this project locally, follow these steps:
 5. **API Endpoints**: Once the server is running, you can access the following API endpoints:
 
     - **Admin Endpoints**:
-        - `POST /admin/add`: Add a new grocery item to the system.
-        - `GET /admin/view`: View existing grocery items.
-        - `PUT /admin/update/:id`: Update details (e.g., name, price) of an existing grocery item by ID.
-        - `DELETE /admin/remove/:id`: Remove a grocery item from the system by ID.
-        - `POST /admin/manage-inventory/:id`: Manage inventory levels of a grocery item by ID.
+        - `POST //api/admin/addGroceryItem`: Add a new grocery item to the system.
+        - `GET /api/user/viewGroceryItems`: View existing grocery items.
+        - `PUT /api/admin/updateGroceryItem/:id`: Update details (e.g., name, price) of an existing grocery item by ID.
+        - `DELETE /api/admin/removeGroceryItem/:id`: Remove a grocery item from the system by ID.
+        - `POST /api/admin/manageInventory/:id`: Manage inventory levels of a grocery item by ID.
 
     - **User Endpoints**:
-        - `GET /user/view`: View the list of available grocery items.
-        - `POST /user/book`: Book multiple grocery items in a single order.
+        - `GET /api/user/viewGroceryItems`: View the list of available grocery items.
+        - `POST /api/user/bookGroceryItems`: Book multiple grocery items in a single order.
 
 ## API Usage
 
@@ -49,7 +49,7 @@ To run this project locally, follow these steps:
 
 #### Add a New Grocery Item
 
-- **Endpoint**: `POST /admin/add`
+- **Endpoint**: `POST /api/admin/addGroceryItem`
 - **Request Body**:
     ```json
     {
@@ -79,7 +79,7 @@ To run this project locally, follow these steps:
 
 #### View Available Grocery Items
 
-- **Endpoint**: `GET /user/view`
+- **Endpoint**: `GET /api/user/viewGroceryItems`
 - **Response**:
     ```json
     {
@@ -102,7 +102,7 @@ To run this project locally, follow these steps:
 
 #### Book Multiple Grocery Items
 
-- **Endpoint**: `POST /user/book`
+- **Endpoint**: `POST /api/user/bookGroceryItems`
 - **Request Body**:
     ```json
     {
@@ -118,4 +118,3 @@ To run this project locally, follow these steps:
 
 ---
 
-Feel free to modify or expand this README file as needed for your project documentation.

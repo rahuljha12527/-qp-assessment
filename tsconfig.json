@@ -1,0 +1,23 @@
+{
+   "compilerOptions": {
+      "lib": [
+         "es5",
+         "es6"
+         
+      ],
+      "composite": true,
+      "esModuleInterop": true,
+      "target": "es2017",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "outDir": "./build",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true
+     
+   },
+   "ts-node": {
+      "esm": true,
+      "experimentalSpecifierResolution": "node",
+  },
+}
